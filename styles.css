@@ -1,0 +1,214 @@
+/* selector universal */
+    *{
+     font-family: "Ubuntu", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     margin:0 ; 
+     width: 100vw;
+     }
+     .ubuntu-light {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 300;
+          font-style: normal;
+        }
+        
+        .ubuntu-regular {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+        
+        .ubuntu-medium {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 500;
+          font-style: normal;
+        }
+        
+        .ubuntu-bold {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 700;
+          font-style: normal;
+        }
+        
+        .ubuntu-light-italic {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 300;
+          font-style: italic;
+        }
+        
+        .ubuntu-regular-italic {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 400;
+          font-style: italic;
+        }
+        
+        .ubuntu-medium-italic {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 500;
+          font-style: italic;
+        }
+        
+        .ubuntu-bold-italic {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 700;
+          font-style: italic;
+        }
+        
+/*selector de clase*/  
+     .colorRojo{
+    color:red;
+    /*font-size:aqua*/;
+     }
+/*selector de id*/
+     #colorNegro{
+    color: blueviolet;
+     }
+/*selector tipo*/
+     h1{
+      color: green;
+     }
+/* la jerarquia o especificidad sobre un mismo elemento
+ quedaria de esta forma: */
+/* inline > id > clase > tipo (pero si usamos el " !important "
+ pisa la jerarquia)*/
+ :root {
+     /* defino la variable */
+     --rojo: #9f3647;
+     --texto-blanco: #ffffff;
+     --fondo-negro:#000000;
+    /* font-size: 16px; es por defecto*/
+
+}
+.texto-blanco {
+     color: var(--texto-blanco);
+ }
+.main{
+    text-align: center;
+    /*dentro del background que contiene la url de la imagen 
+    podemos agregarle un linear gradient para difuminar la imagen
+     que tenemos de fondo  */
+    background-image: linear-gradient(
+     to right top, #0000008a, #0000008a
+    ), url(../imgs/banner-bg.jpg) ;
+     height:  90vh; /*vh es la altura relativa */
+     width: 100%;/*vw es el ancho relativo */
+     min-height: 400px; /*es para que no se achique
+      la imagen mas de ese tamaño al achicar la pantalla*/
+     background-size: cover;
+     background-position: center;
+    /*background-position: ;
+    background-repeat: ;
+    background-size: ;*/
+}
+.main_titulo {
+     padding-top: 20vh;
+     padding-bottom: 5vh;
+     font-size: 3rem;   /* rem/em son unidades de medida 
+     relativa de la fuente base que por defecto es de 16px
+     del font-size*/
+}
+.main_subtitulo{
+     margin-bottom: 5vh;
+}
+.main_btn_registrarse{
+     margin-top: 5vh;
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--rojo);
+    color: var(--texto-blanco);
+    border-radius: 5px;
+}
+.header{
+     background-color:var(--rojo);
+     padding-top: 1vh;
+     padding-left: 3vh;
+     height: 10vh;
+     /* agrego flexbox */
+     display: flex;
+     justify-content: center; /*main axis*/
+     align-items: center;
+}
+.header_logo{
+     height: 5vh;
+     display: inline-block;
+     width: 50vw;
+     text-decoration: none;
+     /* border: 1px solid black; */
+}
+.header_menu{
+     height: 10vh;
+     display: inline-block;
+     width: 45vw;
+     /*padding-top: 2vh;*/
+     /* border: 1px solid black; */
+}
+.header_menu a{
+
+     padding-left: 1vh;
+     padding-right: 1vh;
+     text-decoration: none;
+     color: var(--texto-blanco);
+}
+.header_logo_link{
+     color: var(--texto-blanco);
+     text-decoration: none;
+     
+}
+#header_iniciar_sesion{
+background: black;
+border-radius: 5px;
+padding: 1vh;
+font-size: 1rem;
+}
+/* formulario de busqueda */
+.busqueda{
+     text-align: center;
+     height: 50vh;
+     background-color: var(--fondo-negro);
+     color: var(--texto-blanco);
+     padding-top: 10vh;
+     font-size: 1.5rem;
+}
+.busqueda_form{
+     padding-top: 6vh;
+}
+.busuqeda_form_input{
+   padding: 2vh 3vh;  
+   text-transform: capitalize;
+   border-radius: 25px;
+   width: 50vw;
+   border: none;
+}
+.button_buscar{
+padding: 1.5vh 3vh;
+border-radius: 25px;
+border: 2px solid var(--texto-blanco);
+background-color: var(--rojo);
+color: var(--texto-blanco);
+font-weight: bold;
+font-size: 1rem;
+width: 12vw;
+}
+.button_buscar:hover{
+font-size: 1.1rem;
+}
+hr { 
+     width: 75vw;
+     margin-top: 20vh;
+     border: 0.5px solid var(--rojo);
+}
+.elemento_fijo{
+     position: fixed;
+     top: 90vh;
+     right: 30px;
+     color: green;
+}
+/*
+.flex-conteiner{
+     height: 20vh; /**/
+     background-color: aqua;/**/
+     display: flex;/*convierte las cajas en flex items*/
+     flex-direction: row;/*convertimos en filas o columnas*/
+     justify-content: flex-start;/*se usa para poder separar los elementos*/
+     flex-wrap: wrap;/*es para poder pasar los elementos abajo a medida que se va terminando el espacio del flex*/
+}*/

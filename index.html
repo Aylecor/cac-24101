@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- agrergo las google font para darle estilo a las letras -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!--
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap')
+        </style>
+    -->
+</head>
+<!-- el body es lo que ve el usuario -->
+<body>
+    <header class="header">
+        <div class="header_logo">
+            <a href="#" class="header_logo_link">
+                <i class="fa-solid fa-film"></i>
+                Cac-movies
+            </a>
+        </div>
+        <div class="header_menu">
+             <a href="tendencias">tendencias</a>
+             <a href="registrase">registrarse</a>
+             <a href="iniciar sesion" id="header_iniciar_sesion">
+                iniciar sesion
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="main">
+            <h1 class=" main_titulo texto-blanco ubuntu-bold">
+                Películas y series ilimitadas<br> en un solo lugar
+            </h1>
+            <h2 class="main_subtitulo texto-blanco ubuntu-medium">
+                Disfruta donde quieras.<br> Cancela en cualquier momento
+            </h2>
+            <a class="texto-blanco main_btn_registrarse" 
+            href="./html/registrarse.html">Registrarse
+            </a>
+        </section>
+        <section class="busqueda">
+            <h2>¿Qué estas buscando para ver?
+            </h2>
+            <form class="busqueda_form">
+                <input class="busuqeda_form_input" type="search" placeholder="buscar...">
+                <button class="button_buscar">
+                    Buscar
+                </button>
+            </form>
+            <hr>
+        </section>
+        <section>
+            <h2>Las tendencias de hoy</h2>
+        </section>
+    </main>
+    <a class="elemento_fijo" href="#">
+        <i class="fa fa-circle-arrow-up "></i>
+    </a>
+    <script src="https://kit.fontawesome.com/2de08f3db3.js" crossorigin="anonymous"></script>
+</body>
+</html>
