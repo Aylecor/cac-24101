@@ -89,7 +89,7 @@
      que tenemos de fondo  */
     background-image: linear-gradient(
      to right top, #0000008a, #0000008a
-    ), url(../imgs/banner-bg.jpg) ;
+    ), url(../assets/banner-bg.jpg) ;
      height:  90vh; /*vh es la altura relativa */
      width: 100%;/*vw es el ancho relativo */
      min-height: 400px; /*es para que no se achique
