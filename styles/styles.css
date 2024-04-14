@@ -203,12 +203,3 @@ hr {
      right: 30px;
      color: green;
 }
-/*
-.flex-conteiner{
-     height: 20vh; /**/
-     background-color: aqua;/**/
-     display: flex;/*convierte las cajas en flex items*/
-     flex-direction: row;/*convertimos en filas o columnas*/
-     justify-content: flex-start;/*se usa para poder separar los elementos*/
-     flex-wrap: wrap;/*es para poder pasar los elementos abajo a medida que se va terminando el espacio del flex*/
-}*/
