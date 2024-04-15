@@ -202,3 +202,36 @@ hr {
      right: 30px;
      color: green;
 }
+
+/*inicio footer*/
+.footer{
+     background-color:var(--rojo);
+     padding-top: 8vh;
+     padding-left: 3vh;
+     height: 10vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.footer_menu{
+     height: 10vh;
+     display: inline-block;
+     width: 45vw;
+     /*padding-top: 2vh;*/
+     /* border: 1px solid black; */
+}
+
+.footer_menu a{
+     padding-left: 1vh;
+     padding-right: 1vh;
+     text-decoration: none;
+     color: var(--texto-blanco);
+}
+
+#footer_administrador_peliculas{
+     background: black;
+     border-radius: 5px;
+     padding: 1vh;
+     font-size: 1rem;
+}
