@@ -233,10 +233,10 @@ hr {
      font-size: 1rem;
 }
 
-/* Media queries para dispositivos móviles*/
+/*Media queries para dispositivos móviles*/
 @media screen and (max-width: 768px) {
      .footer {
-         padding: 1vh 0vh 17vh 0vh; 
+         padding: 1vh 0vh 19vh 0vh; 
          height: auto; 
      }
  
