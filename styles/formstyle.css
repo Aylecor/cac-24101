@@ -1,0 +1,109 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-image: url(../assets/bg-register.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #181419;
+    color:white; 
+}
+
+main{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size:1.2rem;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+a{
+    color: #636363;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+.fondo {
+    background-color: #313131;
+    padding: 20px;
+    height: 100%;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.container{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-input {
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    font-size: 0.8rem;
+}
+
+.form-input input,
+.form-input select {
+    box-sizing: border-box;
+    padding: 3%;
+    width: 22vw;
+    border: 0.2em solid #9f3647;
+    border-radius: 20px;
+    background-color: #3b3b3b;
+    color: white;
+    margin-top: 1px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 5%;
+    background-color: #9f3647;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+
+@media (max-width: 1200px) {
+    h1{
+        font-size: 1.2em;
+    }
+
+    .fondo{
+        width: 80vw;
+    }
+
+    .form-input input,
+    .form-input select {
+        width: 75vw;
+        height: auto;
+        padding: 1%;
+        margin-top: 1px;
+    }
+}
