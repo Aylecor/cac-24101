@@ -1,252 +1,427 @@
 /* selector universal */
-    *{
-     font-family: "Ubuntu", sans-serif;
-     font-weight: 400;
-     font-style: normal;
-     margin:0 ; 
-     }
-     .ubuntu-light {
-          font-family: "Ubuntu", sans-serif;
-          font-weight: 300;
-          font-style: normal;
-        }
-        
-        .ubuntu-regular {
-          font-family: "Ubuntu", sans-serif;
-          font-weight: 400;
-          font-style: normal;
-        }
-        
-        .ubuntu-medium {
-          font-family: "Ubuntu", sans-serif;
-          font-weight: 500;
-          font-style: normal;
-        }
-        
-        .ubuntu-bold {
-          font-family: "Ubuntu", sans-serif;
-          font-weight: 700;
-          font-style: normal;
-        }
-        
-        .ubuntu-light-italic {
-          font-family: "Ubuntu", sans-serif;
-          font-weight: 300;
-          font-style: italic;
-        }
-        
-        .ubuntu-regular-italic {
-          font-family: "Ubuntu", sans-serif;
-          font-weight: 400;
-          font-style: italic;
-        }
-        
-        .ubuntu-medium-italic {
-          font-family: "Ubuntu", sans-serif;
-          font-weight: 500;
-          font-style: italic;
-        }
-        
-        .ubuntu-bold-italic {
-          font-family: "Ubuntu", sans-serif;
-          font-weight: 700;
-          font-style: italic;
-        }
-        
-/*selector de clase*/  
-     .colorRojo{
-    color:red;
-    /*font-size:aqua*/;
-     }
+* {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/*selector de clase*/
+.colorRojo {
+  color: red;
+  /*font-size:aqua*/
+}
 /*selector de id*/
-     #colorNegro{
-    color: blueviolet;
-     }
+#colorNegro {
+  color: blueviolet;
+}
 /*selector tipo*/
-     h1{
-      color: green;
-     }
+h1 {
+  color: green;
+}
 /* la jerarquia o especificidad sobre un mismo elemento
  quedaria de esta forma: */
 /* inline > id > clase > tipo (pero si usamos el " !important "
  pisa la jerarquia)*/
- :root {
-     /* defino la variable */
-     --rojo: #9f3647;
-     --texto-blanco: #ffffff;
-     --fondo-negro:#000000;
-    /* font-size: 16px; es por defecto*/
-
+:root {
+  /* defino la variable */
+  --rojo: #9f3647;
+  --texto-blanco: #ffffff;
+  --fondo-negro: #000000;
+  /* font-size: 16px; es por defecto*/
 }
 .texto-blanco {
-     color: var(--texto-blanco);
- }
-.main{
-    text-align: center;
-    /*dentro del background que contiene la url de la imagen 
-    podemos agregarle un linear gradient para difuminar la imagen
-     que tenemos de fondo  */
-    background-image: linear-gradient(
-     to right top, #0000008a, #0000008a
-    ), url(../assets/banner-bg.jpg) ;
-     height:  90vh; /*vh es la altura relativa */
-     width: 100%;/*vw es el ancho relativo */
-     min-height: 400px; /*es para que no se achique
-      la imagen mas de ese tamaño al achicar la pantalla*/
-     background-size: cover;
-     background-position: center;
-    /*background-position: ;
-    background-repeat: ;
-    background-size: ;*/
+  color: var(--texto-blanco);
+}
+
+.parteArriba {
+  background-color: var(--rojo);
+  height: 10vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  z-index: 999;
+}
+
+.header_logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding-left: 5vw;
+  padding-top: 2vh;
+}
+
+.header_menu {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 5vw;
+  padding-top: 2vh;
+  gap: 40px;
+}
+
+.boton_CAC-movies:hover {
+  /*Animacion del boton para que baile*/
+  animation: shaking 2s infinite;
+}
+@keyframes shaking {
+  10% {
+    transform: scale(1.05) rotate(5deg);
+  }
+  20% {
+    transform: scale(1.05) rotate(-5deg);
+  }
+  30% {
+    transform: scale(1.05) rotate(5deg);
+  }
+  40% {
+    transform: none;
+  }
+}
+
+.aRojo:hover {
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header_menu a {
+  text-decoration: none;
+  color: var(--texto-blanco);
+}
+
+.header_logo_link {
+  color: var(--texto-blanco);
+  text-decoration: none;
+}
+
+.botones_header {
+  background: var(--rojo);
+  padding: 2vh;
+  border-radius: 5px;
+}
+.botones_header:hover {
+  background-color: var(--rojo);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+#header_iniciar_sesion {
+  background: black;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 14vw;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 14vw;
+  min-height: 6vh;
+  max-width: 14vw;
+  max-height: 6vh;
+}
+
+#header_iniciar_sesion:hover {
+  background-color: var(--rojo);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.main {
+  text-align: center;
+  background-image: linear-gradient(to right top, #0000008a, #0000008a),
+    url(../assets/banner-bg.jpg);
+  height: 90vh;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
 }
 .main_titulo {
-     padding-top: 20vh;
-     padding-bottom: 5vh;
-     font-size: 3rem;   /* rem/em son unidades de medida 
-     relativa de la fuente base que por defecto es de 16px
-     del font-size*/
+  padding-top: 20vh;
+  padding-bottom: 5vh;
+  font-size: 3rem;
 }
-.main_subtitulo{
-     margin-bottom: 5vh;
+.main_subtitulo {
+  margin-bottom: 5vh;
 }
-.main_btn_registrarse{
-     margin-top: 5vh;
-    text-decoration: none;
-    padding: 10px;
-    background-color: var(--rojo);
-    color: var(--texto-blanco);
-    border-radius: 5px;
-}
-.header{
-     background-color:var(--rojo);
-     padding-top: 1vh;
-     padding-left: 3vh;
-     height: 10vh;
-     /* agrego flexbox */
-     display: flex;
-     justify-content: center; /*main axis*/
-     align-items: center;
-}
-.header_logo{
-     height: 5vh;
-     display: inline-block;
-     width: 50vw;
-     text-decoration: none;
-     /* border: 1px solid black; */
-}
-.header_menu{
-     height: 10vh;
-     display: inline-block;
-     width: 45vw;
-     /*padding-top: 2vh;*/
-     /* border: 1px solid black; */
-}
-.header_menu a{
 
-     padding-left: 1vh;
-     padding-right: 1vh;
-     text-decoration: none;
-     color: var(--texto-blanco);
+.main_btn_registrarse {
+  display: inline-block;
+  padding: 20px 25px;
+  background-color: var(--rojo);
+  color: var(--texto-blanco);
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
 }
-.header_logo_link{
-     color: var(--texto-blanco);
-     text-decoration: none;
-     
+.main_btn_registrarse:hover {
+  transform: scale(0.9);
+  transition: 0.3s;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
-#header_iniciar_sesion{
-background: black;
-border-radius: 5px;
-padding: 1vh;
-font-size: 1rem;
-}
+
 /* formulario de busqueda */
-.busqueda{
-     text-align: center;
-     height: 50vh;
-     background-color: var(--fondo-negro);
-     color: var(--texto-blanco);
-     padding-top: 10vh;
-     font-size: 1.5rem;
+.busqueda {
+  text-align: center;
+  height: 31vh;
+  background-color: #181419;
+  color: var(--texto-blanco);
+  padding-top: 1vh;
+  font-size: 1.5rem;
 }
-.busqueda_form{
-     padding-top: 6vh;
+.busqueda_form {
+  padding-top: 4vh;
+  padding-bottom: 2vh;
 }
-.busuqeda_form_input{
-   padding: 2vh 3vh;  
-   text-transform: capitalize;
-   border-radius: 25px;
-   width: 50vw;
-   border: none;
+.busuqeda_form_input {
+  padding: 2vh 3vh;
+  text-transform: capitalize;
+  border-radius: 25px;
+  width: 60vw;
+  border: none;
 }
-.button_buscar{
-padding: 1.5vh 3vh;
-border-radius: 25px;
-border: 2px solid var(--texto-blanco);
-background-color: var(--rojo);
-color: var(--texto-blanco);
-font-weight: bold;
-font-size: 1rem;
-width: 12vw;
+
+.panel_boton_buscar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2vh;
 }
-.button_buscar:hover{
-font-size: 1.1rem;
+
+.button_buscar {
+  padding: 1.5vh 3vh;
+  border-radius: 25px;
+  border: 2px solid var(--texto-blanco);
+  background-color: var(--rojo);
+  color: var(--texto-blanco);
+  font-weight: bold;
+  font-size: 1rem;
+  width: 12vw;
+  cursor: pointer;
 }
-hr { 
-     width: 75vw;
-     margin-top: 20vh;
-     border: 0.5px solid var(--rojo);
+.button_buscar:hover {
+  font-size: 1.1rem;
 }
-.elemento_fijo{
-     position: fixed;
-     top: 90vh;
-     right: 30px;
-     color: green;
+
+hr {
+  width: 75vw;
+  margin-top: 2vh;
+  border: 0.5px solid var(--rojo);
+}
+.redLine {
+  display: flex;
+  justify-content: center;
+}
+
+.elemento_fijo {
+  /*Es la flechita para SUBIR*/
+  position: fixed;
+  top: 90vh;
+  right: 30px;
+  color: green;
+}
+
+.bloque_tendencias {
+  background-color: #181419;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.texto_tendencias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5vh;
+}
+
+.bloque_peliculas {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 7vh;
+}
+
+.portadaPelicula {
+  border-radius: 10px;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.tituloPelicula {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+}
+
+.apareceTituloPelicula:hover .portadaPelicula {
+  transform: scale(0.9);
+  transition: 0.3s;
+  filter: blur(4px);
+}
+
+.apareceTituloPelicula {
+  position: relative;
+}
+
+.apareceTituloPelicula:hover .tituloPelicula {
+  opacity: 1;
+}
+
+.bloque_botones_AyS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8vh;
+  gap: 3vw;
+}
+.button_AyS {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px 30px;
+  background-color: var(--rojo);
+  color: var(--texto-blanco);
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+}
+.button_AyS:hover {
+  transform: scale(0.9);
+  transition: 0.3s;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
 /*inicio footer*/
-.footer{
-     background-color:var(--rojo);
-     padding-top: 3vh;
-     padding-left: 2vh;
-     height: 10vh;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+.footer {
+  background-color: var(--rojo);
+  padding-top: 3vh;
+  padding-left: 2vh;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer_menu{
-     height: 5vh;
-     display: inline-block;
+.footer_menu {
+  height: 5vh;
+  display: inline-block;
 }
 
-.footer_menu a{
-     padding-left: 1vh;
-     padding-right: 1vh;
-     text-decoration: none;
-     color: var(--texto-blanco);
+.footer_menu a {
+  padding-left: 1vh;
+  padding-right: 1vh;
+  text-decoration: none;
+  color: var(--texto-blanco);
 }
 
-#footer_administrador_peliculas{
-     background: black;
-     border-radius: 5px;
-     padding: 1vh;
-     font-size: 1rem;
+#footer_administrador_peliculas {
+  background: black;
+  border-radius: 5px;
+  padding: 1vh;
+  font-size: 1rem;
 }
 
-/*Media queries para dispositivos móviles*/
+/*Respectiva para Iphone SE (Hasta 986x885) main */
+@media screen and (min-width: 986px) {
+  .parteArriba {
+    background-color: var(--rojo);
+    height: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: fixed;
+    z-index: 999;
+  }
+
+  #header_iniciar_sesion {
+    padding: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5vw;
+    padding-top: 1;
+    gap: 30px;
+  }
+}
+
+/*Media queries para dispositivos móviles footer*/
 @media screen and (max-width: 768px) {
-     .footer {
-         padding: 1vh 0vh 19vh 0vh; 
-         height: auto; 
-     }
- 
-     .footer_menu {
-         display: block;
-         text-align: center;
-     }
-     
-     .footer_menu a {
-         display: block; 
-         margin-bottom: 1vh; 
-     }
- }
+  .footer {
+    padding: 1vh 0vh 19vh 2vh;
+    height: auto;
+  }
+
+  .footer_menu {
+    display: block;
+    text-align: center;
+  }
+
+  .footer_menu a {
+    display: block;
+    margin-bottom: 1vh;
+  }
+}
