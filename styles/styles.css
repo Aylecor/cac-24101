@@ -5,6 +5,7 @@
   font-style: normal;
   margin: 0;
 }
+
 .ubuntu-light {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
@@ -66,17 +67,14 @@
 h1 {
   color: green;
 }
-/* la jerarquia o especificidad sobre un mismo elemento
- quedaria de esta forma: */
-/* inline > id > clase > tipo (pero si usamos el " !important "
- pisa la jerarquia)*/
+
 :root {
   /* defino la variable */
   --rojo: #9f3647;
   --texto-blanco: #ffffff;
   --fondo-negro: #000000;
-  /* font-size: 16px; es por defecto*/
 }
+
 .texto-blanco {
   color: var(--texto-blanco);
 }
@@ -208,7 +206,7 @@ h1 {
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
-/* formulario de busqueda */
+/*formulario de búsqueda*/
 .busqueda {
   text-align: center;
   height: 31vh;
@@ -349,7 +347,7 @@ hr {
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
-/*inicio footer*/
+/*Inicio footer*/
 .footer {
   background-color: var(--rojo);
   padding-top: 3vh;
@@ -411,7 +409,7 @@ hr {
 /*Media queries para dispositivos móviles footer*/
 @media screen and (max-width: 768px) {
   .footer {
-    padding: 1vh 0vh 19vh 2vh;
+    padding-bottom: 12vh;
     height: auto;
   }
 
@@ -422,6 +420,6 @@ hr {
 
   .footer_menu a {
     display: block;
-    margin-bottom: 1vh;
+    margin-bottom: 0.5vh;
   }
 }
