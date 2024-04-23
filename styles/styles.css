@@ -347,6 +347,46 @@ hr {
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
+/*Inicio de la sección: LAS MAS ACLAMADAS*/
+.aclamadas_fotos{
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-around
+}
+.aclamadas_fotos img{
+  height: 250px;
+  width: 170px;
+  text-decoration: none;
+  border-radius: 27px;
+  cursor: pointer;
+  transition: all .5s;
+  
+}
+.aclamadas_fotos:hover img{
+  transform: scale(1.09);
+}
+.las_mas_aclamadas{
+    background-color: var(--fondo-negro);
+    font-size: 1.5rem;
+    padding-top: 3vh;
+    height: 80vh;
+  }
+.las_mas_aclamadas_titutlo{
+  text-align: center;
+  color: var(--texto-blanco);
+  height: 10vh;
+  padding-top: 5vh;
+  font-size: 1.5rem;
+  background-color: var(--fondo-negro);
+}
+.hr2{
+  width: 75vw;
+  margin: 20vh;
+  border: 10px solid var(--rojo);
+}
+/*Fin de la sección: LAS MAS ACLAMADAS*/
+
 /*Inicio footer*/
 .footer {
   background-color: var(--rojo);
