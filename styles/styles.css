@@ -1,4 +1,4 @@
-/* selector universal */
+/* Selector universal */
 * {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -54,31 +54,28 @@
   font-style: italic;
 }
 
-/*selector de clase*/
+/*Selector de clase*/
 .colorRojo {
   color: red;
-  /*font-size:aqua*/
 }
-/*selector de id*/
+/*Selector de Id*/
 #colorNegro {
   color: blueviolet;
 }
-/*selector tipo*/
+/*Selector tipo*/
 h1 {
   color: green;
 }
 
 :root {
-  /* defino la variable */
+  /* Defino la variable */
   --rojo: #9f3647;
   --texto-blanco: #ffffff;
   --fondo-negro: #000000;
 }
-
 .texto-blanco {
   color: var(--texto-blanco);
 }
-
 .parteArriba {
   background-color: var(--rojo);
   height: 10vh;
@@ -88,7 +85,6 @@ h1 {
   position: fixed;
   z-index: 999;
 }
-
 .header_logo {
   text-decoration: none;
   display: flex;
@@ -96,7 +92,6 @@ h1 {
   padding-left: 5vw;
   padding-top: 2vh;
 }
-
 .header_menu {
   display: flex;
   align-items: center;
@@ -130,17 +125,14 @@ h1 {
   padding: 10px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
-
 .header_menu a {
   text-decoration: none;
   color: var(--texto-blanco);
 }
-
 .header_logo_link {
   color: var(--texto-blanco);
   text-decoration: none;
 }
-
 .botones_header {
   background: var(--rojo);
   padding: 2vh;
@@ -150,9 +142,8 @@ h1 {
   background-color: var(--rojo);
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
-
 #header_iniciar_sesion {
-  background: black;
+  background: #181419;
   border-radius: 5px;
   font-size: 1rem;
   width: 14vw;
@@ -164,13 +155,12 @@ h1 {
   min-height: 6vh;
   max-width: 14vw;
   max-height: 6vh;
+  text-align: center;
 }
-
 #header_iniciar_sesion:hover {
   background-color: var(--rojo);
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
-
 .main {
   text-align: center;
   background-image: linear-gradient(to right top, #0000008a, #0000008a),
@@ -188,7 +178,6 @@ h1 {
 .main_subtitulo {
   margin-bottom: 5vh;
 }
-
 .main_btn_registrarse {
   display: inline-block;
   padding: 20px 25px;
@@ -206,10 +195,10 @@ h1 {
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
-/*formulario de búsqueda*/
+/*Formulario de búsqueda*/
 .busqueda {
   text-align: center;
-  height: 31vh;
+  height: 25vh;
   background-color: #181419;
   color: var(--texto-blanco);
   padding-top: 1vh;
@@ -226,14 +215,12 @@ h1 {
   width: 60vw;
   border: none;
 }
-
 .panel_boton_buscar {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 2vh;
 }
-
 .button_buscar {
   padding: 1.5vh 3vh;
   border-radius: 25px;
@@ -248,57 +235,51 @@ h1 {
 .button_buscar:hover {
   font-size: 1.1rem;
 }
-
-hr {
-  width: 75vw;
-  margin-top: 2vh;
-  border: 0.5px solid var(--rojo);
-}
-.redLine {
+.redLine1 {
   display: flex;
   justify-content: center;
+  background-color: #181419;
+  padding-top: 12vh;
+}
+hr {
+  width: 75vw;
+  border: 0.5px solid var(--rojo);
 }
 
 .elemento_fijo {
   /*Es la flechita para SUBIR*/
   position: fixed;
   top: 90vh;
-  right: 30px;
-  color: green;
+  right: 10px;
+  color: white;
+  font-size: 20px;
 }
-
 .bloque_tendencias {
   background-color: #181419;
   color: white;
   font-size: 1.5rem;
 }
-
 .texto_tendencias {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 5vh;
+  padding: 3vh 0;
 }
-
 .bloque_peliculas {
   display: flex;
   flex-wrap: wrap;
-
   align-items: center;
   justify-content: center;
-
   gap: 30px;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 7vh;
 }
-
 .portadaPelicula {
   border-radius: 10px;
   display: block;
   transition: opacity 0.3s ease;
 }
-
 .tituloPelicula {
   position: absolute;
   top: 50%;
@@ -309,21 +290,17 @@ hr {
   transition: opacity 0.3s ease;
   color: white;
 }
-
 .apareceTituloPelicula:hover .portadaPelicula {
   transform: scale(0.9);
   transition: 0.3s;
   filter: blur(4px);
 }
-
 .apareceTituloPelicula {
   position: relative;
 }
-
 .apareceTituloPelicula:hover .tituloPelicula {
   opacity: 1;
 }
-
 .bloque_botones_AyS {
   display: flex;
   align-items: center;
@@ -346,13 +323,31 @@ hr {
   transition: 0.3s;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
+.redLine2 {
+  display: flex;
+  justify-content: center;
+  background-color: #181419;
+  padding-bottom:  2vh;
+}
 
 /*Inicio de la sección: LAS MAS ACLAMADAS*/
+.las_mas_aclamadas{
+  background-color: #181419;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aclamadas_titulo{
+  color:#ffffff;
+  padding: 2vh 0;
+}
 .aclamadas_fotos{
   display: flex;
-  width: 100%;
-  flex-flow: row wrap;
-  justify-content: space-around
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 .aclamadas_fotos img{
   height: 250px;
@@ -361,28 +356,19 @@ hr {
   border-radius: 27px;
   cursor: pointer;
   transition: all .5s;
-  
 }
 .aclamadas_fotos:hover img{
   transform: scale(1.09);
 }
-.las_mas_aclamadas{
-    background-color: var(--fondo-negro);
-    font-size: 1.5rem;
-    padding-top: 3vh;
-    height: 80vh;
-  }
-.las_mas_aclamadas_titutlo{
-  text-align: center;
-  color: var(--texto-blanco);
-  height: 10vh;
-  padding-top: 5vh;
-  font-size: 1.5rem;
-  background-color: var(--fondo-negro);
+.redLine3{
+  background-color: #181419;
+  padding: 6vh 0;
+  display: flex;
+  justify-content: left;
+  padding-left: 15vw;
 }
 .hr2{
-  width: 75vw;
-  margin: 20vh;
+  width: 10vw;
   border: 10px solid var(--rojo);
 }
 /*Fin de la sección: LAS MAS ACLAMADAS*/
@@ -397,52 +383,55 @@ hr {
   justify-content: center;
   align-items: center;
 }
-
 .footer_menu {
   height: 5vh;
   display: inline-block;
 }
-
 .footer_menu a {
   padding-left: 1vh;
   padding-right: 1vh;
   text-decoration: none;
   color: var(--texto-blanco);
 }
-
 #footer_administrador_peliculas {
-  background: black;
+  background: #181419;
   border-radius: 5px;
   padding: 1vh;
   font-size: 1rem;
 }
 
-/*Respectiva para Iphone SE (Hasta 986x885) main */
-@media screen and (min-width: 986px) {
+/*Media Querie del Main*/
+@media screen and (max-width: 375px) {
   .parteArriba {
-    background-color: var(--rojo);
-    height: 10vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    position: fixed;
-    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    height: 14vh;
   }
-
+  .header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .header_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 8px;
+  }
+  .botones_header {
+    background: var(--rojo);
+    padding: 13px;
+    border-radius: 5px;
+  }
   #header_iniciar_sesion {
-    padding: 1vh;
+    background: black;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .header_menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 5vw;
-    padding-top: 1;
-    gap: 30px;
+    text-align: center;
   }
 }
 
@@ -452,14 +441,26 @@ hr {
     padding-bottom: 12vh;
     height: auto;
   }
-
   .footer_menu {
     display: block;
     text-align: center;
   }
-
   .footer_menu a {
     display: block;
     margin-bottom: 0.5vh;
   }
+  #header_iniciar_sesion {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
 }
+
+
+
+
+
+
+
+
+
